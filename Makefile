@@ -7,9 +7,12 @@ AR		= ar rcs
 
 RM		= rm -f
 
-FILES	=
+FILES	=	ft_putchar.c ft_putstr.c     ft_putnbr.c   ft_putunbr.c \
+			ft_puthex.c  ft_puthexdown.c ft_puthexup.c
 
 FILO 	= $(FILES:.c=.o)
+
+INCLUDES = ./libftprintf.h
 
 all : $(NAME)
 
