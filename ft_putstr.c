@@ -6,7 +6,7 @@
 /*   By: mkhairul <mkhairul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 18:13:37 by mkhairul          #+#    #+#             */
-/*   Updated: 2022/06/23 19:55:04 by mkhairul         ###   ########.fr       */
+/*   Updated: 2022/06/24 14:29:30 by mkhairul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ static	size_t	ft_strlen(const char *str)
 void	ft_putstr(char *s)
 {
 	if (!s)
-		retrurn ;
+		return ;
 	write(1, s, ft_strlen(s));
 }

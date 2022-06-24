@@ -8,7 +8,7 @@ AR		= ar rcs
 RM		= rm -f
 
 FILES	=	ft_putchar.c ft_putstr.c     ft_putnbr.c   ft_putunbr.c \
-			ft_puthex.c  ft_puthexdown.c ft_puthexup.c
+			ft_puthex.c  ft_puthexdown.c ft_puthexup.c ft_printf.c
 
 FILO 	= $(FILES:.c=.o)
 
@@ -16,10 +16,11 @@ INCLUDES = ./libftprintf.h
 
 all : $(NAME)
 
-$(NAME) : $(NAME)$(FILO)
+$(NAME) : $(FILO)
+	$(AR) $(NAME) $(FILO)
 
 clean:
-	$(RM) $(FILO)
+	$(RM) *.o
 
 fclean: clean
 	$(RM) $(NAME)

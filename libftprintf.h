@@ -6,7 +6,7 @@
 /*   By: mkhairul <mkhairul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/21 11:50:43 by mkhairul          #+#    #+#             */
-/*   Updated: 2022/06/23 22:03:23 by mkhairul         ###   ########.fr       */
+/*   Updated: 2022/06/24 14:35:05 by mkhairul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,7 @@ void	ft_putunbr(unsigned int c);
 void	ft_puthex(size_t c, int start);
 void	ft_puthexdown(unsigned int c);
 void	ft_puthexup(unsigned int c);
-int ft_printf(const char *, ...)
+
+int ft_printf(const char *str, ...);
+
+#endif
