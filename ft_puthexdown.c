@@ -6,7 +6,7 @@
 /*   By: mkhairul <mkhairul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 20:07:03 by mkhairul          #+#    #+#             */
-/*   Updated: 2022/06/24 14:30:39 by mkhairul         ###   ########.fr       */
+/*   Updated: 2022/06/27 16:02:56 by mkhairul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,12 @@ void	ft_puthexdown(unsigned int c)
 	n = c;
 	if (n >= 16)
 	{
-		ft_puthexup(n / 16);
-		ft_puthexup(n % 16);
+		ft_puthexdown(n / 16);
+		ft_puthexdown(n % 16);
 	}
 	else
 	{
+		t_length.len++;
 		str = "0123456789abcdef";
 		write(1, &str[n], 1);
 	}

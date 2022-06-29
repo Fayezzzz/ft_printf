@@ -6,7 +6,7 @@
 /*   By: mkhairul <mkhairul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/21 11:48:17 by mkhairul          #+#    #+#             */
-/*   Updated: 2022/06/24 14:28:57 by mkhairul         ###   ########.fr       */
+/*   Updated: 2022/06/27 15:00:21 by mkhairul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_putchar(char s)
 {
+	t_length.len++;
 	write(1, &s, 1);
 }

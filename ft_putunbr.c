@@ -6,7 +6,7 @@
 /*   By: mkhairul <mkhairul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 19:51:35 by mkhairul          #+#    #+#             */
-/*   Updated: 2022/06/23 19:55:28 by mkhairul         ###   ########.fr       */
+/*   Updated: 2022/06/27 15:00:51 by mkhairul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	ft_putunbr(unsigned int c)
 	}
 	else
 	{
+		t_length.len++;
 		nb = n + 48;
 		write(1, &nb, 1);
 	}

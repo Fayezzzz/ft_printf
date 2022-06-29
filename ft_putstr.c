@@ -6,25 +6,26 @@
 /*   By: mkhairul <mkhairul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 18:13:37 by mkhairul          #+#    #+#             */
-/*   Updated: 2022/06/24 14:29:30 by mkhairul         ###   ########.fr       */
+/*   Updated: 2022/06/27 15:24:48 by mkhairul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-static	size_t	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
 void	ft_putstr(char *s)
 {
-	if (!s)
-		return ;
-	write(1, s, ft_strlen(s));
+	int	i;
+	
+	i = 0;
+	if (s != 0)
+	{
+		while (s[i] != '\0')
+		{
+			t_length.len++;
+			write(1, &s[i], 1);
+			i++;
+		}
+	}
+	else
+		ft_putstr("(null)");
 }

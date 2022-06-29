@@ -6,7 +6,7 @@
 /*   By: mkhairul <mkhairul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/21 11:48:51 by mkhairul          #+#    #+#             */
-/*   Updated: 2022/06/23 19:55:46 by mkhairul         ###   ########.fr       */
+/*   Updated: 2022/06/27 15:00:42 by mkhairul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	ft_putnbr(int c)
 	n = c;
 	if (n < 0)
 	{
+		t_length.len++;
 		n *= -1;
 		write(1, "-", 1);
 	}
@@ -30,6 +31,7 @@ void	ft_putnbr(int c)
 	}
 	else
 	{
+		t_length.len++;
 		nb = n + 48;
 		write(1, &nb, 1);
 	}

@@ -6,7 +6,7 @@
 /*   By: mkhairul <mkhairul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 19:57:43 by mkhairul          #+#    #+#             */
-/*   Updated: 2022/06/24 14:30:43 by mkhairul         ###   ########.fr       */
+/*   Updated: 2022/06/27 15:01:40 by mkhairul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	ft_puthexup(unsigned int c)
 	}
 	else
 	{
+		t_length.len++;
 		str = "0123456789ABCDEF";
 		write(1, &str[n], 1);
 	}
