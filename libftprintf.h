@@ -6,7 +6,7 @@
 /*   By: mkhairul <mkhairul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/21 11:50:43 by mkhairul          #+#    #+#             */
-/*   Updated: 2022/06/27 14:45:41 by mkhairul         ###   ########.fr       */
+/*   Updated: 2022/06/29 14:11:01 by mkhairul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdarg.h>
 # include <stdlib.h>
 
-struct length
+struct s_length
 {
 	int			len;	
 }		t_length;
